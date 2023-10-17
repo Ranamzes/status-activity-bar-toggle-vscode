@@ -2,13 +2,13 @@
 	"name": "status-activity-bar-toggle",
 	"displayName": "Status&Activity Bar Toggle",
 	"description": "A simple extension to toggle both the Activity Bar and Status Bar with a single command.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "icon.png",
 	"license": "MIT",
 	"publisher": "remart",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/your-username/your-repository"
+		"url": "https://github.com/Ranamzes/status-activity-bar-toggle-vscode"
 	},
 	"engines": {
 		"vscode": "^1.83.0"

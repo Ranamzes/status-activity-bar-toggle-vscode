@@ -1,71 +1,51 @@
-# status-activity-bar-toggle README
+# Status&Activity Bar Toggle
 
-This is the README for your extension "status-activity-bar-toggle". After writing up a brief description, we recommend including the following sections.
+![Icon](icon.png)
+
+**Version:** 1.0.0
+
+**Author:** remart
+
+**[GitHub Repository](https://github.com/Ranamzes/status-activity-bar-toggle-vscode)**
+
+A simple Visual Studio Code extension that allows you to toggle both the Activity Bar and Status Bar with a single command.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Toggle the Activity Bar and Status Bar visibility simultaneously.
+- Customizable keyboard shortcut (Ctrl+Alt+Q) for quick toggling.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+You can install this extension directly from the Visual Studio Code Marketplace.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Launch Visual Studio Code.
+2. Go to the Extensions view by clicking on the square icon in the sidebar.
+3. Search for "Status&Activity Bar Toggle."
+4. Click the Install button.
 
-## Requirements
+Alternatively, you can install it from the command line:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```bash
+code --install-extension remart.status-activity-bar-toggle
+```
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1.After installation, press Ctrl+Alt+Q to toggle both the Activity Bar and Status Bar between visible and hidden states.
+2.Enjoy a clutter-free workspace with the option to quickly bring back both bars when needed.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues at this time. If you encounter any problems or have suggestions for improvement, please [report them on GitHub](https://github.com/Ranamzes/status-activity-bar-toggle-vscode/issues).
 
-## Release Notes
+## Contributing
 
-Users appreciate release notes as you update your extension.
+Contributions are welcome!
 
-### 1.0.0
+## Contact
 
-Initial release of ...
+Feel free to reach out to the author with any questions or feedback:
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Email: ranamzes@gmail.com
+- GitHub: [Ranamzes](https://github.com/Ranamzes)
