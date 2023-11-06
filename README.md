@@ -2,7 +2,9 @@
 
 ![Icon](icon.png)
 
-**Version:** 1.0.0
+<!-- version -->
+**Version:** 1.1.0
+<!-- versionend -->
 
 **Author:** Re•MART
 

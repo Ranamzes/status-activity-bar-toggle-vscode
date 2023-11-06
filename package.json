@@ -35,6 +35,7 @@
 		]
 	},
 	"scripts": {
+		"prepublishOnly": "node update-readme-version.js",
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
