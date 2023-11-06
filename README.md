@@ -4,7 +4,7 @@
 
 **Version:** 1.0.0
 
-**Author:** remart
+**Author:** Re•MART
 
 **[GitHub Repository](https://github.com/Ranamzes/status-activity-bar-toggle-vscode)**
 
