@@ -12,6 +12,7 @@
 
 A simple Visual Studio Code extension that allows you to toggle both the Activity Bar and Status Bar with a single command.
 
+![demonstration](demo.gif)
 ## Features
 
 - Toggle the Activity Bar and Status Bar visibility simultaneously.
