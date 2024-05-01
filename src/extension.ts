@@ -3,11 +3,11 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 	initializeUIVisibility(context); // Call this function to initialize the UI state on activation
 
-	let disposable = vscode.commands.registerCommand('extension.status-activity-bar-toggle', async () => {
+	let toggleUI = vscode.commands.registerCommand('extension.status-activity-bar-toggle', async () => {
 		await toggleUIElements(context);
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(toggleUI);
 }
 
 export function deactivate() { }
@@ -33,6 +33,7 @@ async function initializeUIVisibility(context: vscode.ExtensionContext) {
 }
 
 async function toggleUIElements(context: vscode.ExtensionContext) {
+	console.log("Toggle bar command triggered");
 	// Retrieve the current state from the globalState
 	let activityBarVisible = context.globalState.get<boolean>('activityBarVisible', true);
 	let statusBarVisible = context.globalState.get<boolean>('statusBarVisible', true);

@@ -9,7 +9,7 @@ const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
 const version = packageJson.version;
 
 // Regular expression to find the version placeholder text in README.md
-const versionRegex = /<!-- version -->[\s\S]*?<!-- versionend -->/m;
+const versionRegex = /<!-- version -->\n\*\*Version:\*\* \d+\.\d+\.\d+\n<!-- versionend -->/;
 
 // Read README.md
 let readmeContent = fs.readFileSync(readmePath, 'utf8');
