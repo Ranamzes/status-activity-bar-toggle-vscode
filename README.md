@@ -3,7 +3,7 @@
 ![Icon](icon.png)
 
 <!-- version -->
-**Version:** 1.1.2
+**Version:** 1.1.4
 <!-- versionend -->
 
 **Author:** Re•MART
