@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-	initializeUIVisibility(context); // Call this function to initialize the UI state on activation
+	initializeUIVisibility(context); // Initialize the UI state on activation
 
 	let toggleUI = vscode.commands.registerCommand('extension.status-activity-bar-toggle', async () => {
 		await toggleUIElements(context);
@@ -15,7 +15,7 @@ export function deactivate() { }
 async function initializeUIVisibility(context: vscode.ExtensionContext) {
 	const config = vscode.workspace.getConfiguration();
 
-	// Assuming that if these settings are not set, the bars are visible by default
+	// Assume the bars are visible by default if settings are not set
 	const activityBarVisible = config.get('workbench.activityBar.visible', true);
 	const statusBarVisible = config.get('workbench.statusBar.visible', true);
 
@@ -34,17 +34,28 @@ async function initializeUIVisibility(context: vscode.ExtensionContext) {
 
 async function toggleUIElements(context: vscode.ExtensionContext) {
 	console.log("Toggle bar command triggered");
+
 	// Retrieve the current state from the globalState
 	let activityBarVisible = context.globalState.get<boolean>('activityBarVisible', true);
 	let statusBarVisible = context.globalState.get<boolean>('statusBarVisible', true);
 
-	// Toggle the activity bar visibility
-	await vscode.commands.executeCommand('workbench.action.toggleActivityBarVisibility');
-	activityBarVisible = !activityBarVisible;
-	await context.globalState.update('activityBarVisible', activityBarVisible);
+	// Create an array of toggle promises without awaiting immediately
+	const toggleCommands = [
+		vscode.commands.executeCommand('workbench.action.toggleActivityBarVisibility'),
+		vscode.commands.executeCommand('workbench.action.toggleStatusbarVisibility')
+	];
 
-	// Toggle the status bar visibility
-	await vscode.commands.executeCommand('workbench.action.toggleStatusbarVisibility');
+	// Execute the toggles simultaneously
+	await Promise.all(toggleCommands);
+
+	// Update the visibility states after both commands have executed
+	activityBarVisible = !activityBarVisible;
 	statusBarVisible = !statusBarVisible;
-	await context.globalState.update('statusBarVisible', statusBarVisible);
+
+	// Save the new states in parallel
+	await Promise.all([
+		context.globalState.update('activityBarVisible', activityBarVisible),
+		context.globalState.update('statusBarVisible', statusBarVisible)
+	]);
 }
+
