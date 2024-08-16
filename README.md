@@ -1,4 +1,4 @@
-# Status&Activity Bar Toggle
+# Bar Toggle Status & Activity
 
 ![Icon](icon.png)
 
