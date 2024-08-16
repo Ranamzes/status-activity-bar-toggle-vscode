@@ -36,7 +36,7 @@
 	},
 	"scripts": {
 		"prepublish": "node prepublish-script.js",
-		"publish": "npm run prepublish && yarn dlx @vscode/vsce publish --no-yarn",
+		"publish": "npm run prepublish && yarn dlx @vscode/vsce publish --no-yarn -y",
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
