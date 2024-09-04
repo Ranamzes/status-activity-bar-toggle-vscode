@@ -1,3 +1,6 @@
+![Version](https://img.shields.io/badge/Version-1.1.5-blue)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/remart.status-activity-bar-toggle)
+
 # Bar Toggle Status & Activity
 
 ![Icon](icon.png)
@@ -8,7 +11,7 @@
 
 **Author:** Re•MART
 
-**[GitHub Repository](https://github.com/Ranamzes/status-activity-bar-toggle-vscode)**
+**[Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=remart.status-activity-bar-toggle)**
 
 A simple Visual Studio Code extension that allows you to toggle both the Activity Bar and Status Bar with a single command.
 
@@ -20,11 +23,11 @@ A simple Visual Studio Code extension that allows you to toggle both the Activit
 
 ## Installation
 
-You can install this extension directly from the Visual Studio Code Marketplace.
+You can install this extension directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=remart.status-activity-bar-toggle).
 
 1. Launch Visual Studio Code.
 2. Go to the Extensions view by clicking on the square icon in the sidebar.
-3. Search for "Status&Activity Bar Toggle."
+3. Search for "Bar Toggle Status & Activity"
 4. Click the Install button.
 
 Alternatively, you can install it from the command line:
