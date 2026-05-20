@@ -58,4 +58,3 @@ async function toggleUIElements(context: vscode.ExtensionContext) {
 		context.globalState.update('statusBarVisible', statusBarVisible)
 	]);
 }
-
